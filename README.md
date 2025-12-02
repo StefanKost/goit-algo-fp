@@ -5,3 +5,11 @@ Algorithms and Data Structures Final Project
 ```bash
 python task1_linked_list.py  
 ```
+
+## Task 2 (Pythagoras Tree)
+```
+python task2_pythagoras_tree.py
+```
+### Result
+
+![pythagoras_tree](./assets/pythagoras_tree.png)
