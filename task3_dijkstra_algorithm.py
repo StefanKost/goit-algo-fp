@@ -390,4 +390,12 @@ if __name__ == "__main__":
     except IndexError:
         pass
 
+    # Show the shortest paths from a central hub
+    print("Shortest paths from Coruscant to all planets:")
+    all_paths = dijkstra.all_paths()
+    central_paths = all_paths["Coruscant"]
+    sorted_paths = sorted(central_paths.items(), key=lambda x: x[1]["distance"])
+    for planet, data in sorted_paths:
+        print(f" -> {planet}: {data['distance']} days ({len(data['path'])} planets)")
+
     galaxy.render(None, path)
