@@ -40,3 +40,12 @@ python task4_heap_visualisation.py
 
 ### Result
 ![heap_tree](./assets/heap_tree.png)
+
+## Task 4 (Visualise tree traversal)
+```bash
+python task5_tree_traversal.py
+```
+
+### Result
+![dfs_travelsal](./assets/dfs_traversal.png)
+![bfs_travelsal](./assets/bfs_travelsal.png)
