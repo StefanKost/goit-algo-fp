@@ -41,7 +41,7 @@ python task4_heap_visualisation.py
 ### Result
 ![heap_tree](./assets/heap_tree.png)
 
-## Task 4 (Visualise tree traversal)
+## Task 5 (Visualise tree traversal)
 ```bash
 python task5_tree_traversal.py
 ```
@@ -49,3 +49,24 @@ python task5_tree_traversal.py
 ### Result
 ![dfs_travelsal](./assets/dfs_traversal.png)
 ![bfs_travelsal](./assets/bfs_travelsal.png)
+
+## Task 6 (Food selection)
+
+| Algorithm           | Items                            | Calories | Cost |
+|---------------------|----------------------------------|----------|------|
+| Greedy              | cola, potato, pepsi, hot-dog     | 870      | 80   |
+| Dynamic Programming | potato, cola, hot-dog, hamburger | 1020     | 110  |
+
+**Comparison:**
+
+| Aspect           | Greedy          | Dynamic Programming | 
+|------------------|-----------------|---------------------|
+| Time Complexity  | O(n log n)      | O(n × W)            |
+| Space Complexity | O(n)            | O(n × W)            |
+| Accuracy         | ~90% of optimal | 100%                |
+| Result Quality   | Near-optimal    | Always optimal      |
+
+
+**Recommended use:**
+- **Greedy:** Suitable for large datasets, real-time applications, or when an approximate solution is sufficient.
+- **Dynamic Programming:** Best for smaller datasets where the exact optimal solution is required.
