@@ -30,11 +30,15 @@ def add_edges(graph, node, pos, x=0, y=0, layer=1):
 
 
 def depth_first_traversal(node, order):
-    if node is None:
-        return
-    order.append(node)
-    depth_first_traversal(node.left, order)
-    depth_first_traversal(node.right, order)
+    stack = [node]
+    while stack:
+        cur = stack.pop()
+        order.append(cur)
+        # First add right to make sure left will be fetched first
+        if cur.right:
+            stack.append(cur.right)
+        if cur.left:
+            stack.append(cur.left)
 
 
 def breadth_first_traversal(node, order):
