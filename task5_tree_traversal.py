@@ -1,4 +1,5 @@
 import uuid
+from collections import deque
 
 import networkx as nx
 import matplotlib.pyplot as plt
@@ -42,9 +43,9 @@ def depth_first_traversal(node, order):
 
 
 def breadth_first_traversal(node, order):
-    queue = [node]
+    queue = deque([node])
     while queue:
-        cur = queue.pop(0)
+        cur = queue.popleft()
         order.append(cur)
         if cur.left:
             queue.append(cur.left)
